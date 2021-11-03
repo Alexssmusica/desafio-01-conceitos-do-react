@@ -3,6 +3,7 @@ import React from 'react';
 import { TaskList } from '../../components/TaskList';
 
 describe('App Page', () => {
+  window.alert = jest.fn();
   it('should be able to add a task', async () => {
     render(<TaskList />);
 
